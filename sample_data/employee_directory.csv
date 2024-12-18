@@ -1,0 +1,6 @@
+employee_id,full_name,department,job_title,security_clearance,office_location,email
+EMP-1001,Elena Rostova,Engineering,Principal Cloud Architect,Top Secret / L5,Sunnyvale CA,elena.rostova@corp.internal
+EMP-1002,Marcus Sterling,Legal,Senior Corporate Counsel,Confidential / L4,New York NY,marcus.sterling@corp.internal
+EMP-1003,Sarah Jenkins,Finance,VP Global Treasury,Secret / L4,London UK,sarah.jenkins@corp.internal
+EMP-1004,David Chen,Site Reliability,Lead DevOps Engineer,Secret / L4,Seattle WA,david.chen@corp.internal
+EMP-1005,Amina Al-Mansoor,Executive,Chief Technology Officer,Executive / L6,Mountain View CA,amina.cto@corp.internal

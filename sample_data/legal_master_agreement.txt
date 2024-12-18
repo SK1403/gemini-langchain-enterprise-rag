@@ -1,0 +1,23 @@
+GLOBAL ENTERPRISE MASTER SERVICES AGREEMENT (MSA)
+Contract Identification: MSA-2024-ENTERPRISE-009
+Effective Date: January 1, 2024
+Parties: GlobalTech Enterprises Inc. ("Customer") and CloudVendor Global Inc. ("Supplier")
+
+SECTION 1: SCOPE OF SERVICES
+Supplier shall provide cloud infrastructure, managed API endpoints, and technical engineering support pursuant to individual Statements of Work (SOWs). All services must maintain 99.95% monthly uptime SLA.
+
+SECTION 2: LIMITATION OF LIABILITY
+Neither party shall be liable to the other for any indirect, incidental, consequential, special, or punitive damages arising out of this agreement. 
+The total aggregate liability of either party for direct claims arising under this agreement shall not exceed the total fees paid by Customer to Supplier in the twelve (12) months preceding the incident giving rise to liability.
+Exceptions to Liability Cap: Gross negligence, willful misconduct, breach of confidentiality obligations in Section 5, and indemnification obligations under Section 6 are uncapped.
+
+SECTION 3: INDEMNIFICATION OBLIGATIONS
+Supplier agrees to defend, indemnify, and hold harmless Customer, its affiliates, and officers from and against any third-party claims alleging that the software, services, or documentation infringe any patent, copyright, trademark, or trade secret.
+
+SECTION 4: DATA PRIVACY AND SECURITY
+Supplier shall process all personal data strictly in compliance with GDPR, CCPA, and ISO/IEC 27001 standards. 
+Supplier must notify Customer within twenty-four (24) hours of discovering any verified or suspected security breach or unauthorized access to Customer Data.
+
+SECTION 5: TERMINATION RIGHTS
+Either party may terminate this agreement immediately upon written notice if the other party materially breaches any provision of this agreement and fails to cure such breach within thirty (30) days of receiving written notice thereof.
+Customer may terminate any SOW for convenience upon sixty (60) days prior written notice.

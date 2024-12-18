@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CorporateTreasuryReport fiscalYear="2024" department="Finance">
+  <TreasuryOverview>
+    <TotalCapitalAllocated currency="USD">145000000.00</TotalCapitalAllocated>
+    <AuditorSignoff verified="true">PricewaterhouseCoopers LLP</AuditorSignoff>
+    <ComplianceStandard>SOX Section 404</ComplianceStandard>
+  </TreasuryOverview>
+
+  <TransactionsList>
+    <Transaction id="TX-98401" type="Capital Expenditure">
+      <Date>2024-03-15</Date>
+      <Amount currency="USD">18500000.00</Amount>
+      <Beneficiary>Google Cloud Platform Inc.</Beneficiary>
+      <Purpose>3-Year Enterprise Cloud Commitment &amp; Compute Quota</Purpose>
+      <ApprovalStatus>Approved by CFO</ApprovalStatus>
+      <CostCenter>CC-ENGINEERING-702</CostCenter>
+    </Transaction>
+
+    <Transaction id="TX-98402" type="Vendor Settlement">
+      <Date>2024-06-20</Date>
+      <Amount currency="EUR">4200000.00</Amount>
+      <Beneficiary>SAP AG Europe</Beneficiary>
+      <Purpose>ERP Global License Renewal and Support Services</Purpose>
+      <ApprovalStatus>Approved by VP IT</ApprovalStatus>
+      <CostCenter>CC-IT-CORP-101</CostCenter>
+    </Transaction>
+
+    <Transaction id="TX-98403" type="R&amp;D Investment">
+      <Date>2024-08-11</Date>
+      <Amount currency="USD">9800000.00</Amount>
+      <Beneficiary>Vertex AI Foundation Labs</Beneficiary>
+      <Purpose>Custom Domain Large Language Model Fine-Tuning and Evaluation</Purpose>
+      <ApprovalStatus>Approved by Chief Technology Officer</ApprovalStatus>
+      <CostCenter>CC-AI-RESEARCH-990</CostCenter>
+    </Transaction>
+  </TransactionsList>
+</CorporateTreasuryReport>

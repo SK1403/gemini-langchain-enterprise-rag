@@ -1,0 +1,57 @@
+{
+  "organization": "GlobalTech Enterprises Inc.",
+  "cloud_environment": "Google Cloud Platform (Production)",
+  "infrastructure_architecture": {
+    "network": {
+      "vpc_name": "corp-core-vpc-prod",
+      "routing_mode": "GLOBAL",
+      "subnets": [
+        {"name": "subnet-us-central1-apps", "cidr": "10.100.0.0/20", "region": "us-central1"},
+        {"name": "subnet-europe-west1-data", "cidr": "10.100.16.0/20", "region": "europe-west1"}
+      ],
+      "firewall_rules": [
+        {"name": "allow-internal-mesh", "direction": "INGRESS", "action": "ALLOW", "source": "10.100.0.0/16"},
+        {"name": "deny-external-ssh", "direction": "INGRESS", "action": "DENY", "ports": ["22"]}
+      ]
+    },
+    "compute_services": [
+      {
+        "service_name": "enterprise-rag-api",
+        "runtime": "Cloud Run (Fully Managed)",
+        "region": "us-central1",
+        "cpu_limit": "2 vCPU",
+        "memory_limit": "4 GiB",
+        "min_instances": 1,
+        "max_instances": 50,
+        "concurrency": 80,
+        "service_account": "sa-rag-core@corp-prod.iam.gserviceaccount.com",
+        "ingress": "internal-and-cloud-load-balancing"
+      },
+      {
+        "service_name": "data-pipeline-worker",
+        "runtime": "Cloud Dataflow (Apache Beam)",
+        "region": "us-central1",
+        "worker_machine_type": "n2-standard-4",
+        "autoscaling_algorithm": "THROUGHPUT_BASED",
+        "max_workers": 20
+      }
+    ],
+    "storage_and_databases": [
+      {
+        "type": "Cloud Storage",
+        "bucket_name": "enterprise-knowledge-corpus-prod",
+        "storage_class": "STANDARD",
+        "versioning_enabled": true,
+        "cmek_key_ring": "projects/corp-prod/locations/us-central1/keyRings/hsm-ring/cryptoKeys/doc-key",
+        "soft_delete_retention_days": 14
+      },
+      {
+        "type": "BigQuery",
+        "dataset_id": "corporate_analytics_lake",
+        "location": "US",
+        "tables": ["document_metadata", "audit_access_logs", "quarterly_kpis"],
+        "encryption": "Google-managed default"
+      }
+    ]
+  }
+}
